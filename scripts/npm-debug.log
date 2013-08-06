@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'karma' ]
+2 info using npm@1.3.5
+3 info using node@v0.11.5-pre
+4 verbose cache add [ 'karma', null ]
+5 verbose cache add name=undefined spec="karma" args=["karma",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'karma',
+6 verbose parsed url   path: 'karma',
+6 verbose parsed url   href: 'karma' }
+7 silly lockFile 512423cb-karma karma
+8 verbose lock karma /Users/Alex/.npm/512423cb-karma.lock
+9 silly lockFile 512423cb-karma karma
+10 verbose addNamed [ 'karma', '' ]
+11 verbose addNamed [ null, '*' ]
+12 silly lockFile cd7961bb-karma karma@
+13 verbose lock karma@ /Users/Alex/.npm/cd7961bb-karma.lock
+14 silly lockFile cd7961bb-karma karma@
+15 error Error: EACCES, open '/Users/Alex/.npm/cd7961bb-karma.lock'
+15 error  { [Error: EACCES, open '/Users/Alex/.npm/cd7961bb-karma.lock']
+15 error   stack: 'Error: EACCES, open \'/Users/Alex/.npm/cd7961bb-karma.lock\'',
+15 error   errno: -13,
+15 error   code: 'EACCES',
+15 error   path: '/Users/Alex/.npm/cd7961bb-karma.lock' }
+16 error Please try running this command again as root/Administrator.
+17 error System Darwin 11.4.0
+18 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "karma"
+19 error cwd /Users/Alex/Documents/Work/appengine-angular-seed-python/scripts
+20 error node -v v0.11.5-pre
+21 error npm -v 1.3.5
+22 error path /Users/Alex/.npm/cd7961bb-karma.lock
+23 error code EACCES
+24 error errno -13
+25 error stack Error: EACCES, open '/Users/Alex/.npm/cd7961bb-karma.lock'
+26 verbose exit [ -13, true ]

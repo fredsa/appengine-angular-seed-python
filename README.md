@@ -53,10 +53,10 @@ reverse-proxying the backend server(s) and a webserver(s).
 ### Running unit tests
 
 We recommend using [jasmine](http://pivotal.github.com/jasmine/) and
-[Testacular](http://vojtajina.github.com/testacular/) for your unit tests/specs, but you are free
+[Karma](http://karma-runner.github.io/0.8/index.html) for your unit tests/specs, but you are free
 to use whatever works for you.
 
-Requires [node.js](http://nodejs.org/), Testacular (`sudo npm install -g testacular`) and a local
+Requires [node.js](http://nodejs.org/), Karma (`sudo npm install -g karma`) and a local
 or remote browser.
 
 * start `scripts/test.sh` (on windows: `scripts\test.bat`)
@@ -79,7 +79,7 @@ info.
 * serve your project directory with your http/backend server or node.js + `scripts/web-server.js`
 * to run do one of:
   * open `http://localhost:port/test/e2e/runner.html` in your browser
-  * run the tests from console with [Testacular](vojtajina.github.com/testacular) via
+  * run the tests from console with [Karma](http://karma-runner.github.io/0.8/index.html) via
     `scripts/e2e-test.sh` or `script/e2e-test.bat`
 
 ### Continuous Integration
@@ -113,6 +113,14 @@ fetch the changes and merge them into your project with git.
         services.js     --> custom angular services
       lib/              --> angular and 3rd party javascript libraries
         angular/
+          angular-cookies.js
+          angular-cookies.min.js
+          angular-loader.js
+          angular-loader.min.js
+          angular-resource.js
+          angular-resource.min.js
+          angular-sanitize.js
+          angular-sanitize.min.js
           angular.js        --> the latest angular js
           angular.min.js    --> the latest minified angular js
           angular-*.js      --> angular add-on modules
@@ -120,9 +128,11 @@ fetch the changes and merge them into your project with git.
       partials/             --> angular view partials (partial html templates)
         partial1.html
         partial2.html
-
-    config/testacular.conf.js        --> config file for running unit tests with Testacular
-    config/testacular-e2e.conf.js    --> config file for running e2e tests with Testacular
+	
+	app.yaml
+    
+    config/karma.conf.js        --> config file for running unit tests with Testacular
+    config/karma-e2e.conf.js    --> config file for running e2e tests with Testacular
 
     scripts/            --> handy shell/js/ruby scripts
       e2e-test.sh       --> runs end-to-end tests with Testacular (*nix)
